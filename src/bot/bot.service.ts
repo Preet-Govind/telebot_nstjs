@@ -9,10 +9,10 @@ export class BotService implements OnModuleInit {
 
     botMessage() {        
         process.env.NTBA_FIX_319 = "1";
-        const TelegramBot = require('node-telegram-bot-api');//('6422583402:AAHQTMx6vNoJk3Gvb-e1JaqioN06_awF-GU');
+        const TelegramBot = require('node-telegram-bot-api');
         
-        //6422583402:AAHQTMx6vNoJk3Gvb-e1JaqioN06_awF-GU
-        const token = '6422583402:AAHQTMx6vNoJk3Gvb-e1JaqioN06_awF-GU';
+        
+        const token = 'TOKEN';//write your token here
         
         const bot = new TelegramBot(token, { polling: true });
         
